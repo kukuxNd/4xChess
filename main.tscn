@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://dekivsajti3u5"]
+
+[ext_resource type="Script" path="res://hub.gd" id="1_dqlc4"]
+[ext_resource type="Script" path="res://main.gd" id="1_mnn5i"]
+[ext_resource type="Script" path="res://map.gd" id="2_kh4yj"]
+[ext_resource type="PackedScene" uid="uid://c8wqh0i0xyscp" path="res://map/map_1.tscn" id="4_4xous"]
+
+[node name="main" type="Node"]
+script = ExtResource("1_mnn5i")
+
+[node name="HUB" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dqlc4")
+
+[node name="UI_Start" type="Control" parent="HUB"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasModulate" type="CanvasModulate" parent="HUB/UI_Start"]
+color = Color(0.818828, 0.675228, 0.346932, 1)
+
+[node name="btn_start" type="Button" parent="HUB/UI_Start"]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 406.0
+offset_right = 579.0
+offset_bottom = 437.0
+text = "开始游戏"
+
+[node name="btn_exit" type="Button" parent="HUB/UI_Start"]
+layout_mode = 0
+offset_left = 506.0
+offset_top = 465.0
+offset_right = 578.0
+offset_bottom = 496.0
+text = "退出游戏"
+
+[node name="UI_Game" type="Control" parent="HUB"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="btn_return_main" type="Button" parent="HUB/UI_Game"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 31.0
+offset_right = 137.0
+offset_bottom = 62.0
+text = "回到主菜单"
+
+[node name="btn_exit" type="Button" parent="HUB/UI_Game"]
+visible = false
+layout_mode = 0
+offset_left = 506.0
+offset_top = 465.0
+offset_right = 578.0
+offset_bottom = 496.0
+text = "退出游戏"
+
+[node name="Map" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_kh4yj")
+mod_scene = ExtResource("4_4xous")
+
+[connection signal="pressed" from="HUB/UI_Start/btn_start" to="HUB" method="_on_btn_start_pressed"]
+[connection signal="pressed" from="HUB/UI_Start/btn_exit" to="HUB" method="_on_btn_exit_pressed"]
+[connection signal="pressed" from="HUB/UI_Game/btn_return_main" to="HUB" method="_on_btn_return_main_pressed"]
+[connection signal="pressed" from="HUB/UI_Game/btn_exit" to="HUB" method="_on_btn_exit_pressed"]
