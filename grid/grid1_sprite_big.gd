@@ -33,12 +33,12 @@ func _input(event: InputEvent) -> void:
 		if event.is_pressed() and  bhover:
 			modulate = Color(1.3, 0.7, 1.0, 0.9)
 			bselect = !bselect
-			modulate = Color(1.3, 0.7, 1.0, 0.9)  if bselect else Color(1.0, 1.0, 1.0, 1)
+			modulate = Color(0.3, 0.5, .7, 0.9)  if bselect else Color(1.0, 1.0, 1.0, 1)
 		#print(event)		
-	if bselect:
-		bselect = false
-		GameGlobal.target_pos = get_parent().global_position
-		GameGlobal.actor_move()
+	# if bselect:
+	# 	bselect = false
+	# 	GameGlobal.target_pos = global_position
+	# 	GameGlobal.actor_move()
 	pass
 
 

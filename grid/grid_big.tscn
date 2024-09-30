@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://grid/map_grid.gd" id="1_x4k7w"]
 [ext_resource type="Texture2D" uid="uid://6mm0ueeojljg" path="res://icon.svg" id="2_d8f7v"]
 [ext_resource type="PackedScene" uid="uid://c3y3020e8ebo0" path="res://grid/grid_small.tscn" id="2_tcnug"]
-[ext_resource type="Script" path="res://grid/grid1_sprite_2d.gd" id="3_ocm0g"]
+[ext_resource type="Script" path="res://grid/grid1_sprite_big.gd" id="4_11bma"]
 
 [node name="Grid_big" type="Node2D"]
 script = ExtResource("1_x4k7w")
@@ -22,4 +22,4 @@ offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_d8f7v")
-script = ExtResource("3_ocm0g")
+script = ExtResource("4_11bma")

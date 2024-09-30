@@ -58,6 +58,7 @@ offset_bottom = 31.0
 text = "退出游戏"
 
 [node name="UI_Game" type="Control" parent="HUB"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -261,27 +262,11 @@ anchor_left = 11.5
 anchor_top = 0.525
 anchor_right = 19.075
 anchor_bottom = 1.225
-offset_left = 68.0
-offset_top = 27.0
-offset_right = -38.0
-offset_bottom = 27.0
+offset_left = 61.0
+offset_top = -3.0
+offset_right = -45.0
+offset_bottom = -3.0
 text = "你的回合"
-fit_content = true
-
-[node name="TipScoreText" type="RichTextLabel" parent="HUB/UI_Game"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 508.0
-offset_top = -24.0
-offset_right = 740.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "点数：10 积分：20 回合数：1"
 fit_content = true
 
 [node name="DebugText" type="RichTextLabel" parent="HUB"]

@@ -24,4 +24,11 @@ func _process(delta: float) -> void:
 
 
 func _on_btn_next_turn_pressed() -> void:
+	GameGlobal.global_info["turnCount"] += 1
+	var global_info = GameGlobal.global_info
+	#GameGlobal.freshScoreText()
+	#%TipScoreText.text = "123"
+	%TipScoreText.text = "点数：" + str(global_info["money"]) + " 积分："+ str(global_info["score"]) + " 回合："+ str(global_info["turnCount"])
 	pass # Replace with function body.
+
+
