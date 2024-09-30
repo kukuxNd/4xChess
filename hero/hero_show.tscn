@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://14nuriyh6k88"]
+
+[ext_resource type="Shader" uid="uid://d4hvtnpk08uah" path="res://hero/hero.tres" id="1_7k507"]
+[ext_resource type="Texture2D" uid="uid://6mm0ueeojljg" path="res://icon.svg" id="1_ou46r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yb4fk"]
+shader = ExtResource("1_7k507")
+
+[node name="hero_show" type="TextureRect"]
+material = SubResource("ShaderMaterial_yb4fk")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -448.0
+offset_bottom = -196.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_ou46r")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = -8.0
+offset_right = 80.0
+offset_bottom = 64.0
+color = Color(0.681004, 0.34816, 0.228122, 1)

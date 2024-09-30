@@ -21,3 +21,7 @@ func _on_return_main_menu() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_btn_next_turn_pressed() -> void:
+	pass # Replace with function body.

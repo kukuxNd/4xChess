@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckk710si3a5k7"]
+
+[ext_resource type="PackedScene" uid="uid://14nuriyh6k88" path="res://hero/hero_show.tscn" id="1_kjyxt"]
+[ext_resource type="Script" path="res://hero/hero.gd" id="3_mfp2x"]
+
+[node name="Hero" type="Node2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("3_mfp2x")
+
+[node name="hero_show" parent="." instance=ExtResource("1_kjyxt")]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0

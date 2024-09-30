@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx2ibxu2nnut4"]
+
+[ext_resource type="Texture2D" uid="uid://6mm0ueeojljg" path="res://icon.svg" id="1_2yyp1"]
+
+[node name="hero" type="TextureRect"]
+offset_right = 128.0
+offset_bottom = 128.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource("1_2yyp1")
