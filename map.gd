@@ -9,7 +9,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func onStart() -> void:
-	print("map Start")
+	#print("map Start")
 	map_scene = mod_scene.instantiate()
 
 	add_child(map_scene)

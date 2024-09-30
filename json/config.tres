@@ -1,0 +1,14 @@
+[gd_resource type="JSON" format=3 uid="uid://bl8f41453rykd"]
+
+[resource]
+data = {
+"entities": [{
+"name": "entity_0",
+"value": "value_0"
+}, {
+"name": "entity_1",
+"value": "value_1"
+}],
+"name": "my_dictionary",
+"version": "1.0.0"
+}

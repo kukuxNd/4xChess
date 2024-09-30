@@ -10,7 +10,7 @@ var col_y = 3
 var GRID_WIDTH = 33
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("map start!")
+	#print("map start!")
 	screen_width = get_viewport_rect().size.x
 	screen_height = get_viewport_rect().size.y
 	start_pos_x = - GRID_WIDTH
