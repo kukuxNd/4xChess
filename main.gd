@@ -6,21 +6,19 @@ func test_json() -> void:
 	print(config.data.entities)
 	for one in config.data.entities:
 		print(one.name)
-	
 	pass
 
 func onGameStart() -> void:
 	print("onGameStart")
 	GameGlobal.gameState = GameGlobal.GameState.STARTING
-	$"%Map".onStart()
+	#$"%Map".onStart()
 	pass
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-
-		
-	config.get_class()
 	$HUB.return_main_menu.connect(_on_return_main_menu)
-	
+	await GameGlobal._sg_game_start_
+	onGameStart()
+	print(" signal game start ")
 	pass # Replace with function body.
 
 func _on_return_main_menu() -> void:

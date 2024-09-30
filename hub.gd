@@ -10,9 +10,9 @@ func _ready() -> void:
 
 # 开始游戏
 func _on_btn_start_pressed() -> void:
+	GameGlobal._sg_game_start_.emit()
 	$UI_Start.hide()
 	$UI_Game.show()
-	main.onGameStart()
 	pass # Replace with function body.
 
 # 退出游戏

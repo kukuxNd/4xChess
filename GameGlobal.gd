@@ -1,5 +1,13 @@
 extends Node
 
+# 全局信号集 用于 await 等待型号
+#下一回合
+signal _sg_next_turn_
+signal _sg_game_start_
+signal _sg_game_pause_
+signal _sg_game_over_
+signal _sg_game_return_to_main_menu_
+
 
 enum GameState{
 	MAIN_MENU,
